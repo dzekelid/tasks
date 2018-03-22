@@ -18,7 +18,7 @@ consumes:
 paths:
   /lists/{tasklist}/tasks:
     get:
-      summary: ""
+      summary: Get Lists Task List Tasks
       description: Returns all tasks in the specified task list
       operationId: tasks.tasks.list
       parameters:
@@ -64,7 +64,10 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - lists
+      - task
+      - list
+      - tasks
 definitions:
   Task:
     properties:
