@@ -18,7 +18,7 @@ consumes:
 paths:
   /lists/{tasklist}/tasks/{task}:
     delete:
-      summary: ""
+      summary: Delete Lists Task List Tasks Task
       description: Deletes the specified task from the task list
       operationId: tasks.tasks.delete
       parameters:
@@ -32,7 +32,11 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - lists
+      - task
+      - list
+      - tasks
+      - task
 definitions:
   Task:
     properties:
