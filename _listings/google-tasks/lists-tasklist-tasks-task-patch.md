@@ -18,7 +18,7 @@ consumes:
 paths:
   /lists/{tasklist}/tasks/{task}:
     patch:
-      summary: ""
+      summary: Patch Lists Task List Tasks Task
       description: Updates the specified task
       operationId: tasks.tasks.patch
       parameters:
@@ -36,7 +36,11 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - lists
+      - task
+      - list
+      - tasks
+      - task
 definitions:
   Task:
     properties:
