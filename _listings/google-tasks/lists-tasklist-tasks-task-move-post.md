@@ -18,7 +18,7 @@ consumes:
 paths:
   /lists/{tasklist}/tasks/{task}/move:
     post:
-      summary: ""
+      summary: Add Lists Task List Tasks Task Move
       description: Moves the specified task to another position in the task list
       operationId: tasks.tasks.move
       parameters:
@@ -38,7 +38,12 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - lists
+      - task
+      - list
+      - tasks
+      - task
+      - move
 definitions:
   Task:
     properties:
