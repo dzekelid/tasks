@@ -34,7 +34,7 @@ apis:
   tags: Tasks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-database-migration-service/action-startreplicationtask-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-database-migration-service/action-stopreplicationtask-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/dms/latest/APIReference/Welcome.html
