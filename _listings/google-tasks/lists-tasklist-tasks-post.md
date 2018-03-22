@@ -18,7 +18,7 @@ consumes:
 paths:
   /lists/{tasklist}/tasks:
     post:
-      summary: ""
+      summary: Add Lists Task List Tasks
       description: Creates a new task on the specified task list
       operationId: tasks.tasks.insert
       parameters:
@@ -39,7 +39,10 @@ paths:
         200:
           description: OK
       tags:
-      - ""
+      - lists
+      - task
+      - list
+      - tasks
 definitions:
   Task:
     properties:
