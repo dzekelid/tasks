@@ -24,8 +24,8 @@ tags:
 - Etl
 - Automation
 - Amazon Web Services
-created: "2018-03-22"
-modified: "2018-03-22"
+created: "2018-03-24"
+modified: "2018-03-24"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-step-functions/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -38,7 +38,7 @@ apis:
   tags: Tasks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-step-functions/action-sendtasksuccess-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-step-functions/action-sendtaskfailure-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/step-functions/latest/apireference/Welcome.html
