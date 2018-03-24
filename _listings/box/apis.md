@@ -20,8 +20,8 @@ tags:
 - Files
 - Collaboration
 - Backup
-created: "2018-03-22"
-modified: "2018-03-22"
+created: "2018-03-24"
+modified: "2018-03-24"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -33,7 +33,7 @@ apis:
   tags: Tasks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/tasks-task-id-assignments-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/files-file-id-tasks-get.md
 x-common:
 - type: x-base
   url: https://api.box.com/
