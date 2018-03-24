@@ -33,7 +33,7 @@ apis:
   tags: Tasks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/tasks-task-id-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/tasks-task-id-assignments-get.md
 x-common:
 - type: x-base
   url: https://api.box.com/
