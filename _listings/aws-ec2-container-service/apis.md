@@ -33,7 +33,7 @@ apis:
   tags: Tasks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-ec2-container-service/action-describetasks-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-ec2-container-service/action-listtasks-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/AmazonECS/latest/APIReference/
