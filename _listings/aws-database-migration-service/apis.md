@@ -20,8 +20,8 @@ tags:
 - Migration
 - Database
 - Amazon Web Services
-created: "2018-03-22"
-modified: "2018-03-22"
+created: "2018-03-24"
+modified: "2018-03-24"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-database-migration-service/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -34,7 +34,7 @@ apis:
   tags: Tasks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-database-migration-service/action-stopreplicationtask-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-database-migration-service/action-createreplicationtask-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/dms/latest/APIReference/Welcome.html
