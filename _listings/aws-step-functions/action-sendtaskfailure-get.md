@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Step Functions API
+  title: AWS Step Functions API Send Task Failure
   version: 1.0.0
+  description: Used by workers to report that the task identified by the taskToken
+    failed.
 schemes:
 - http
 produces:
