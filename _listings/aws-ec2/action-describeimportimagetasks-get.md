@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS EC2 API
+  title: AWS EC2 API Describe Import Image Tasks
   version: 1.0.0
+  description: Displays details about an import virtual machine or import snapshot
+    tasks that are already created.
 schemes:
 - http
 produces:
