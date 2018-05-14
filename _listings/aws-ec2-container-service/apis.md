@@ -34,7 +34,26 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-ec2-container-service/action-stoptask-get.md
+- name: Amazon EC2 Container Service API Describe Tasks
+  description: Describes a specified task or tasks.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonECS.png
+  humanURL: https://aws.amazon.com/ecs/
+  baseURL: http:://{host}//
+  tags: Tasks
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-ec2-container-service/action-describetasks-get.md
 x-common:
+- type: x-documentation
+  url: http://docs.aws.amazon.com/AmazonECS/latest/APIReference/
+- type: x-faq
+  url: https://aws.amazon.com/ecs/faqs/
+- type: x-getting-started
+  url: https://portal.aws.amazon.com/gp/aws/developer/registration/index.html
+- type: x-pricing
+  url: https://aws.amazon.com/ecs/pricing/
+- type: x-website
+  url: https://aws.amazon.com/ecs/
 - type: x-documentation
   url: http://docs.aws.amazon.com/AmazonECS/latest/APIReference/
 - type: x-faq
