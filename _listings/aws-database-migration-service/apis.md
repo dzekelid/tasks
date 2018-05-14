@@ -35,15 +35,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-database-migration-service/action-stopreplicationtask-get.md
-- name: AWS Database Migration Service API Create Replication Task
-  description: Creates a replication task using the specified parameters.
+- name: AWS Database Migration Service API Delete Replication Task
+  description: Deletes the specified replication task.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/aws-icon-dms.png
   humanURL: https://aws.amazon.com/dms/
   baseURL: http:://{host}//
   tags: Tasks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-database-migration-service/action-createreplicationtask-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-database-migration-service/action-deletereplicationtask-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/dms/latest/APIReference/Welcome.html
