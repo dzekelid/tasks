@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS EC2 Systems Manager API
+  title: Amazon EC2 Systems Manager API Describe Maintenance Window Execution Tasks
   version: 1.0.0
+  description: For a given Maintenance Window execution, lists the tasks that were
+    executed.
 schemes:
 - http
 produces:
