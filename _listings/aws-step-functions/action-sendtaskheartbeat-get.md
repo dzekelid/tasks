@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Step Functions API
+  title: AWS Step Functions API Send Task Heartbeat
   version: 1.0.0
+  description: "Used by workers to report to the service that the task represented
+    by the specified taskToken \n    is still making progress."
 schemes:
 - http
 produces:
