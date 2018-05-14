@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Data Pipeline API
+  title: AWS Data Pipeline API Poll For Task
   version: 1.0.0
+  description: Task runners call PollForTask to receive a task to perform from AWS
+    Data Pipeline.
 schemes:
 - http
 produces:
