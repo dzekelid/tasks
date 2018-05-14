@@ -37,16 +37,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-ec2-systems-manager/action-describemaintenancewindowtasks-get.md
-- name: Amazon EC2 Systems Manager API Describe Maintenance Window Execution Tasks
-  description: For a given Maintenance Window execution, lists the tasks that were
-    executed.
+- name: Amazon EC2 Systems Manager API Describe Maintenance Window Tasks
+  description: Lists the tasks in a Maintenance Window.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2.png
   humanURL: https://aws.amazon.com/ec2/systems-manager/
   baseURL: http:://{host}//
   tags: Tasks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-ec2-systems-manager/action-describemaintenancewindowexecutiontasks-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-ec2-systems-manager/action-describemaintenancewindowtasks-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/ssm/latest/APIReference/Welcome.html
