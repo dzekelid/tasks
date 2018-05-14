@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Database Migration Service API
+  title: AWS Database Migration Service API Stop Replication Task
   version: 1.0.0
+  description: Stops the replication task.
 schemes:
 - http
 produces:
