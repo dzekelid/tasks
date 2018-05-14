@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Data Pipeline API
+  title: AWS Data Pipeline API Report Task Progress
   version: 1.0.0
+  description: Task runners call ReportTaskProgress when assigned a task to acknowledge
+    that it has the task.
 schemes:
 - http
 produces:
