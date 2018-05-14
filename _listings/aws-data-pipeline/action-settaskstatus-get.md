@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Data Pipeline API
+  title: AWS Data Pipeline API Set Task Status
   version: 1.0.0
+  description: Task runners call SetTaskStatus to notify AWS Data Pipeline that a
+    task is completed and provide information about the final status.
 schemes:
 - http
 produces:
