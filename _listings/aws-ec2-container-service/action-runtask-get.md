@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS EC2 Container Service API
+  title: Amazon EC2 Container Service API Run Task
   version: 1.0.0
+  description: Starts a new task using the specified task definition.
 schemes:
 - http
 produces:
