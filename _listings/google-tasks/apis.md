@@ -26,15 +26,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/google-tasks/lists-tasklist-tasks-task-move-post.md
-- name: Google Tasks API Patch Lists Task List Tasks Task
-  description: Updates the specified task. This method supports patch semantics.
+- name: Google Tasks API Put Lists Task List Tasks Task
+  description: Updates the specified task.
   image: ""
   humanURL: https://developers.google.com/google-apps/tasks/
   baseURL: http:://www.googleapis.com//tasks/v1
   tags: Tasks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/google-tasks/lists-tasklist-tasks-task-patch.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/google-tasks/lists-tasklist-tasks-task-put.md
 x-common:
 - type: x-code
   url: https://developers.google.com/google-apps/tasks/setup
