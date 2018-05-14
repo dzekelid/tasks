@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Database Migration Service API
+  title: AWS Database Migration Service API Start Replication Task
   version: 1.0.0
+  description: Starts the replication task.
 schemes:
 - http
 produces:
