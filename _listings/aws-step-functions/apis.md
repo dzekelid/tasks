@@ -39,16 +39,16 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-step-functions/action-sendtasksuccess-get.md
-- name: AWS Step Functions API Send Task Failure
-  description: Used by workers to report that the task identified by the taskToken
-    failed.
+- name: AWS Step Functions API Send Task Heartbeat
+  description: "Used by workers to report to the service that the task represented
+    by the specified taskToken \n    is still making progress."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/aws-step-functions.png
   humanURL: https://aws.amazon.com/step-functions/
   baseURL: http:://{host}//
   tags: Tasks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-step-functions/action-sendtaskfailure-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-step-functions/action-sendtaskheartbeat-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/step-functions/latest/apireference/Welcome.html
