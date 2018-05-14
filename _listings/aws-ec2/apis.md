@@ -34,6 +34,16 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-ec2/action-describeimportimagetasks-get.md
+- name: AWS EC2 API Describe Import Image Tasks
+  description: Displays details about an import virtual machine or import snapshot
+    tasks that are already created.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2.png
+  humanURL: https://aws.amazon.com/ec2/
+  baseURL: http:://{host}//
+  tags: Tasks
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-ec2/action-describeimportimagetasks-get.md
 x-common:
 - type: x-code
   url: http://aws.amazon.com/code/Amazon-EC2/
