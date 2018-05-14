@@ -34,16 +34,16 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-data-pipeline/action-settaskstatus-get.md
-- name: AWS Data Pipeline API Poll For Task
-  description: Task runners call PollForTask to receive a task to perform from AWS
-    Data Pipeline.
+- name: AWS Data Pipeline API Report Task Progress
+  description: Task runners call ReportTaskProgress when assigned a task to acknowledge
+    that it has the task.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/datapipelinelogo.jpeg
   humanURL: https://aws.amazon.com/datapipeline/
   baseURL: http:://{host}//
   tags: Tasks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-data-pipeline/action-pollfortask-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-data-pipeline/action-reporttaskprogress-get.md
 x-common:
 - type: x-blog
   url: http://blogs.aws.amazon.com/bigdata
