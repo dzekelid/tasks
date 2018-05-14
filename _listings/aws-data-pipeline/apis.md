@@ -34,16 +34,16 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-data-pipeline/action-settaskstatus-get.md
-- name: AWS Data Pipeline API Report Task Progress
-  description: Task runners call ReportTaskProgress when assigned a task to acknowledge
-    that it has the task.
+- name: AWS Data Pipeline API Set Task Status
+  description: Task runners call SetTaskStatus to notify AWS Data Pipeline that a
+    task is completed and provide information about the final status.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/datapipelinelogo.jpeg
   humanURL: https://aws.amazon.com/datapipeline/
   baseURL: http:://{host}//
   tags: Tasks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-data-pipeline/action-reporttaskprogress-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-data-pipeline/action-settaskstatus-get.md
 x-common:
 - type: x-blog
   url: http://blogs.aws.amazon.com/bigdata
