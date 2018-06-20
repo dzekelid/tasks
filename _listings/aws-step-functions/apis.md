@@ -1,5 +1,6 @@
 ---
 name: AWS Step Functions
+x-slug: aws-step-functions
 description: AWS Step Functions makes it easy to coordinate the components of distributed
   applications and microservices using visual workflows. Building applications from
   individual components that each perform a discrete function lets you scale and change
@@ -11,57 +12,75 @@ description: AWS Step Functions makes it easy to coordinate the components of di
   so your application executes in order and as expected. Step Functions logs the state
   of each step, so when things do go wrong, you can diagnose and debug problems quickly.
   You can change and add steps without even writing code, so you can easily evolve
-  your application and innovate faster.nnAWS Step Functions manages the operations
-  and underlying infrastructure for you to help ensure your application is available
-  at any scale.
+  your application and innovate faster.AWS Step Functions manages the operations and
+  underlying infrastructure for you to help ensure your application is available at
+  any scale.
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/aws-step-functions.png
 x-kinRank: "10"
-x-alexaRank: ""
-tags:
-- Stack Network
-- Orchestration
-- iPaaS
-- Etl
-- Automation
-- Amazon Web Services
-created: "2018-03-24"
-modified: "2018-03-24"
-url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-step-functions/apis.yaml
+x-alexaRank: "0"
+tags: Tasks
+created: "2018-06-20"
+modified: "2018-06-20"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-step-functions/apis.md
 specificationVersion: "0.14"
 apis:
-- name: AWS Step Functions API
-  description: AWS Step Functions makes it easy to coordinate the components of distributed
-    applications and microservices using visual workflows
+- name: AWS Step Functions API Send Task Failure
+  x-api-slug: aws-step-functions-api
+  description: Used by workers to report that the task identified by the taskToken
+    failed.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/aws-step-functions.png
-  humanURL: ""
-  baseURL: :///
+  humanURL: https://aws.amazon.com/step-functions/
+  baseURL: ://///?Action=SendTaskFailure
   tags: Tasks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-step-functions/action-sendtasksuccess-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-step-functions/actionsendtaskfailure-get-openapi.md
+- name: AWS Step Functions API Send Task Heartbeat
+  x-api-slug: aws-step-functions-api
+  description: "Used by workers to report to the service that the task represented
+    by the specified taskToken \n    is still making progress."
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/aws-step-functions.png
+  humanURL: https://aws.amazon.com/step-functions/
+  baseURL: ://///?Action=SendTaskHeartbeat
+  tags: Tasks
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-step-functions/actionsendtaskheartbeat-get-openapi.md
 - name: AWS Step Functions API Send Task Success
+  x-api-slug: aws-step-functions-api
   description: Used by workers to report that the task identified by the taskToken
     completed successfully.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/aws-step-functions.png
   humanURL: https://aws.amazon.com/step-functions/
-  baseURL: http:://{host}//
+  baseURL: ://///?Action=SendTaskSuccess
   tags: Tasks
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-step-functions/action-sendtasksuccess-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-step-functions/actionsendtasksuccess-get-openapi.md
+- name: AWS Step Functions API
+  x-api-slug: aws-step-functions-api
+  description: AWS Step Functions makes it easy to coordinate the components of distributed
+    applications and microservices using visual workflows. Building applications from
+    individual components that each perform a discrete function lets you scale and
+    change applications quickly. Step Functions is a reliable way to coordinate components
+    and step through the functions of your application. Step Functions provides a
+    graphical console to arrange and visualize the components of your application
+    as a series of steps. This makes it simple to build and run multi-step applications.
+    Step Functions automatically triggers and tracks each step, and retries when there
+    are errors, so your application executes in order and as expected. Step Functions
+    logs the state of each step, so when things do go wrong, you can diagnose and
+    debug problems quickly. You can change and add steps without even writing code,
+    so you can easily evolve your application and innovate faster.AWS Step Functions
+    manages the operations and underlying infrastructure for you to help ensure your
+    application is available at any scale.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/aws-step-functions.png
+  humanURL: https://aws.amazon.com/step-functions/
+  baseURL: :///
+  tags: Tasks
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/aws-step-functions/openapi.md
 x-common:
-- type: x-documentation
-  url: http://docs.aws.amazon.com/step-functions/latest/apireference/Welcome.html
-- type: x-faq
-  url: https://aws.amazon.com/step-functions/faqs/
-- type: x-getting-started
-  url: https://aws.amazon.com/step-functions/getting-started/
-- type: x-how-it-works
-  url: https://aws.amazon.com/step-functions/#howitworks
-- type: x-pricing
-  url: https://aws.amazon.com/step-functions/pricing/
-- type: x-website
-  url: https://aws.amazon.com/step-functions/
 - type: x-documentation
   url: http://docs.aws.amazon.com/step-functions/latest/apireference/Welcome.html
 - type: x-faq
