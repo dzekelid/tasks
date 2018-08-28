@@ -1,5 +1,6 @@
 ---
 name: Helpware
+x-slug: helpware
 description: Helpware (www.helpware.io) provides companies with a team of highly educated
   people to provide back office services for companies, and they take the messy non-profitable
   work off the plate of a highly paid employee so they can spend their time on higher
@@ -7,14 +8,11 @@ description: Helpware (www.helpware.io) provides companies with a team of highly
   accounting support, marketing support, and on-boarding customers efficiently.
 image: ""
 x-kinRank: "10"
-x-alexaRank: ""
-tags:
-- Tasks
-- Stack Network
-- Crowdsourcing
-created: "2018-02-26"
-modified: "2018-02-26"
-url: https://raw.githubusercontent.com/streamdata-gallery/tasks/master/_listings/helpware/apis.yaml
+x-alexaRank: "0"
+tags: Tasks
+created: "2018-08-28"
+modified: "2018-08-28"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/helpware/apis.md
 specificationVersion: "0.14"
 apis: []
 x-common:

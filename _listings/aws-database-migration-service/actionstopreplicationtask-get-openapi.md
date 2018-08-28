@@ -13,6 +13,31 @@ produces:
 consumes:
 - application/json
 paths:
+  /?Action=DescribeReplicationTasks:
+    get:
+      summary: Describe Replication Tasks
+      description: Returns information about replication tasks for your account in
+        the current region.
+      operationId: describeReplicationTasks
+      x-api-path-slug: actiondescribereplicationtasks-get
+      parameters:
+      - in: query
+        name: Filters
+        description: Filters applied to the describe action
+        type: string
+      - in: query
+        name: Marker
+        description: An optional pagination token provided by a previous     request
+        type: string
+      - in: query
+        name: MaxRecords
+        description: The maximum number of records to include in the response
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Replication Tasks
   /?Action=CreateReplicationTask:
     get:
       summary: Create Replication Task
@@ -74,31 +99,6 @@ paths:
         name: ReplicationTaskArn
         description: The Amazon Resource Name (ARN) of the replication task to be
           deleted
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Replication Tasks
-  /?Action=DescribeReplicationTasks:
-    get:
-      summary: Describe Replication Tasks
-      description: Returns information about replication tasks for your account in
-        the current region.
-      operationId: describeReplicationTasks
-      x-api-path-slug: actiondescribereplicationtasks-get
-      parameters:
-      - in: query
-        name: Filters
-        description: Filters applied to the describe action
-        type: string
-      - in: query
-        name: Marker
-        description: An optional pagination token provided by a previous     request
-        type: string
-      - in: query
-        name: MaxRecords
-        description: The maximum number of records to include in the response
         type: string
       responses:
         200:

@@ -1,10 +1,8 @@
----
 swagger: "2.0"
 x-collection-name: Box
 x-complete: 1
 info:
   title: Box
-  description: the-box-content-api-gives-you-access-to-secure-content-management-and-content-experience-features-for-use-in-your-own-app--it-strives-to-be-restful-and-is-organized-around-the-main-resources-youre-familiar-with-from-the-box-web-interface-
   version: 1.0.0
 host: api.box.com
 basePath: /2.0
@@ -130,4 +128,81 @@ paths:
       - Task
       - ""
       - Assignments
----
+  /task_assignments:
+    post:
+      summary: Create Task Assignment
+      description: Used to assign a task to a single user. There can be multiple assignments
+        on a given task.
+      operationId: createTaskAssignment
+      x-api-path-slug: task-assignments-post
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Documents
+      - Task
+      - Assignments
+  /task_assignments/{TASK_ASSIGNMENT_ID}:
+    get:
+      summary: Get Task Assignment
+      description: Fetches a specific task assignment.
+      operationId: getTaskAssignment
+      x-api-path-slug: task-assignmentstask-assignment-id-get
+      parameters:
+      - in: query
+        name: fields
+        description: Attribute(s) to include in the response
+      - in: path
+        name: TASK_ASSIGNMENT_ID
+      responses:
+        200:
+          description: OK
+      tags:
+      - Documents
+      - Task
+      - Assignments
+      - Task
+      - Assignment
+    put:
+      summary: Update Task Assignment
+      description: Used to update a task assignment.
+      operationId: updateTaskAssignment
+      x-api-path-slug: task-assignmentstask-assignment-id-put
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: TASK_ASSIGNMENT_ID
+      responses:
+        200:
+          description: OK
+      tags:
+      - Documents
+      - Task
+      - Assignments
+      - Task
+      - Assignment
+    delete:
+      summary: Delete Task Assignment
+      description: Deletes a specific task assignment.
+      operationId: deleteTaskAssignment
+      x-api-path-slug: task-assignmentstask-assignment-id-delete
+      parameters:
+      - in: path
+        name: TASK_ASSIGNMENT_ID
+      responses:
+        200:
+          description: OK
+      tags:
+      - Documents
+      - Task
+      - Assignments
+      - Task
+      - Assignment

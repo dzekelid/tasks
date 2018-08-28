@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: AWS Step Functions
 x-complete: 1
@@ -75,4 +74,26 @@ paths:
           description: OK
       tags:
       - Tasks
----
+  /?Action=GetActivityTask:
+    get:
+      summary: Get Activity Task
+      description: "Used by workers to retrieve a task (with the specified activity
+        ARN) which has been scheduled \n    for execution by a running state machine."
+      operationId: getActivityTask
+      x-api-path-slug: actiongetactivitytask-get
+      parameters:
+      - in: query
+        name: activityArn
+        description: The Amazon Resource Name (ARN) of the activity to retrieve tasks
+          from (assigned when you create the task      using CreateActivity
+        type: string
+      - in: query
+        name: workerName
+        description: You can provide an arbitrary name in order to identify the worker
+          that the task is assigned to
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Activity Task

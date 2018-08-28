@@ -7,91 +7,310 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jp
 x-kinRank: "9"
 x-alexaRank: "445"
 tags: Tasks
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Box Get File's Tasks
-  x-api-slug: box
+- name: Box - Get File's Tasks
+  x-api-slug: filesfile-idtasks-get
   description: Retrieves all of the tasks for given file.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
   humanURL: http://box.com
-  baseURL: https://api.box.com//2.0//files/{FILE_ID}/tasks
-  tags: Documents,Files, File, , Tasks
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/filesfile-idtasks-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/filesfile-idtasks-get-openapi.md
-- name: Box Create Task
-  x-api-slug: box
+- name: Box - Create Task
+  x-api-slug: tasks-post
   description: Used to create a single task for single user on a single file.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
   humanURL: http://box.com
-  baseURL: https://api.box.com//2.0//tasks
-  tags: Documents,Tasks
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/tasks-post-openapi.md
-- name: Box Get Task
-  x-api-slug: box
+- name: Box - Get Task
+  x-api-slug: taskstask-id-get
   description: Fetches a specific task.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
   humanURL: http://box.com
-  baseURL: https://api.box.com//2.0//tasks/{TASK_ID}
-  tags: Documents,Tasks, Task
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/taskstask-id-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/taskstask-id-get-openapi.md
-- name: Box Update Task
-  x-api-slug: box
+- name: Box - Update Task
+  x-api-slug: taskstask-id-put
   description: Updates a specific task.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
   humanURL: http://box.com
-  baseURL: https://api.box.com//2.0//tasks/{TASK_ID}
-  tags: Documents,Tasks, Task
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/taskstask-id-put-openapi.md
-- name: Box Delete Task
-  x-api-slug: box
+- name: Box - Delete Task
+  x-api-slug: taskstask-id-delete
   description: Permanently deletes a specific task.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
   humanURL: http://box.com
-  baseURL: https://api.box.com//2.0//tasks/{TASK_ID}
-  tags: Documents,Tasks, Task
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/taskstask-id-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/taskstask-id-delete-openapi.md
-- name: Box Get Assignments
-  x-api-slug: box
+- name: Box - Get Assignments
+  x-api-slug: taskstask-idassignments-get
   description: Retrieves all of the assignments for a given task.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
   humanURL: http://box.com
-  baseURL: https://api.box.com//2.0//tasks/{TASK_ID}/assignments
-  tags: Documents,Tasks, Task, , Assignments
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/taskstask-idassignments-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/taskstask-idassignments-get-openapi.md
-- name: Box
-  x-api-slug: box
-  description: Box.net provides a sophisticated API for their online document sharing
-    and collaboration web application.
+- name: Box - Get Task
+  x-api-slug: taskstask-id-get
+  description: Fetches a specific task.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
   humanURL: http://box.com
   baseURL: https://api.box.com//2.0
-  tags: Tasks
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/taskstask-id-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/taskstask-id-get-openapi.md
+- name: Box - Update Task
+  x-api-slug: taskstask-id-put
+  description: Updates a specific task.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
+  humanURL: http://box.com
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/taskstask-id-put-openapi.md
+- name: Box - Delete Task
+  x-api-slug: taskstask-id-delete
+  description: Permanently deletes a specific task.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
+  humanURL: http://box.com
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/taskstask-id-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/taskstask-id-delete-openapi.md
+- name: Box - Get Assignments
+  x-api-slug: taskstask-idassignments-get
+  description: Retrieves all of the assignments for a given task.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
+  humanURL: http://box.com
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/taskstask-idassignments-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/taskstask-idassignments-get-openapi.md
+- name: Box - Create Task Assignment
+  x-api-slug: task-assignments-post
+  description: Used to assign a task to a single user. There can be multiple assignments
+    on a given task.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
+  humanURL: http://box.com
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/task-assignments-post-openapi.md
+- name: Box - Get Task Assignment
+  x-api-slug: task-assignmentstask-assignment-id-get
+  description: Fetches a specific task assignment.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
+  humanURL: http://box.com
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/task-assignmentstask-assignment-id-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/task-assignmentstask-assignment-id-get-openapi.md
+- name: Box - Update Task Assignment
+  x-api-slug: task-assignmentstask-assignment-id-put
+  description: Used to update a task assignment.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
+  humanURL: http://box.com
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/task-assignmentstask-assignment-id-put-openapi.md
+- name: Box - Delete Task Assignment
+  x-api-slug: task-assignmentstask-assignment-id-delete
+  description: Deletes a specific task assignment.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
+  humanURL: http://box.com
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/task-assignmentstask-assignment-id-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/task-assignmentstask-assignment-id-delete-openapi.md
+- name: Box - Delete Task Assignment
+  x-api-slug: task-assignmentstask-assignment-id-delete
+  description: Deletes a specific task assignment.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
+  humanURL: http://box.com
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/task-assignmentstask-assignment-id-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/task-assignmentstask-assignment-id-delete-openapi.md
+- name: Box - Update Task Assignment
+  x-api-slug: task-assignmentstask-assignment-id-put
+  description: Used to update a task assignment.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
+  humanURL: http://box.com
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/task-assignmentstask-assignment-id-put-openapi.md
+- name: Box - Get Task Assignment
+  x-api-slug: task-assignmentstask-assignment-id-get
+  description: Fetches a specific task assignment.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
+  humanURL: http://box.com
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/task-assignmentstask-assignment-id-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/task-assignmentstask-assignment-id-get-openapi.md
+- name: Box - Create Task Assignment
+  x-api-slug: task-assignments-post
+  description: Used to assign a task to a single user. There can be multiple assignments
+    on a given task.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
+  humanURL: http://box.com
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/task-assignments-post-openapi.md
+- name: Box - Get Assignments
+  x-api-slug: taskstask-idassignments-get
+  description: Retrieves all of the assignments for a given task.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
+  humanURL: http://box.com
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/taskstask-idassignments-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/taskstask-idassignments-get-openapi.md
+- name: Box - Delete Task
+  x-api-slug: taskstask-id-delete
+  description: Permanently deletes a specific task.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
+  humanURL: http://box.com
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/taskstask-id-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/taskstask-id-delete-openapi.md
+- name: Box - Update Task
+  x-api-slug: taskstask-id-put
+  description: Updates a specific task.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
+  humanURL: http://box.com
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/taskstask-id-put-openapi.md
+- name: Box - Get Task
+  x-api-slug: taskstask-id-get
+  description: Fetches a specific task.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg
+  humanURL: http://box.com
+  baseURL: https://api.box.com//2.0
+  tags: Files, Collaboration, Sharing, Storage, Storage, Stack Network, Stack, Productivity,
+    SaaS, Technology, Enterprise, API Provider, Profiles, Publish, Service API, Relative
+    Data, Relative StreamRank, Streams, Backups
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/taskstask-id-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/tasks/master/_listings/box/taskstask-id-get-openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://botify.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://box.stack.network
 - type: x-base
   url: https://api.box.com/
 - type: x-blog
@@ -105,7 +324,7 @@ x-common:
 - type: x-developer
   url: http://developers.box.com
 - type: x-github
-  url: https://github.com/boxdotnet
+  url: https://github.com/box
 - type: x-pricing
   url: https://developers.box.com/box-platform-pricing/
 - type: x-road-map

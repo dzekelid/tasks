@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Pivotal Tracker
 x-complete: 1
@@ -147,4 +146,3 @@ paths:
       - STORY
       - ID
       - Tasks
----

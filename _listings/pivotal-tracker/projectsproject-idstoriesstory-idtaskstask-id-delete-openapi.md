@@ -100,6 +100,53 @@ paths:
       - Tasks
       - TASK
       - ID
+  /projects/{PROJECT_ID}/stories/{STORY_ID}/tasks:
+    get:
+      summary: Get Projects Project Stories Story Tasks
+      description: Get projects project stories story tasks.
+      operationId: getProjectsProjectStoriesStoryTasks
+      x-api-path-slug: projectsproject-idstoriesstory-idtasks-get
+      parameters:
+      - in: path
+        name: PROJECT_ID
+        description: The ID of the project
+      - in: path
+        name: STORY_ID
+        description: The ID of the story
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - PROJECT
+      - ID
+      - Stories
+      - STORY
+      - ID
+      - Tasks
+    post:
+      summary: Post Projects Project Stories Story Tasks
+      description: Post projects project stories story tasks.
+      operationId: postProjectsProjectStoriesStoryTasks
+      x-api-path-slug: projectsproject-idstoriesstory-idtasks-post
+      parameters:
+      - in: path
+        name: PROJECT_ID
+        description: The ID of the project
+      - in: path
+        name: STORY_ID
+        description: The ID of the story
+      responses:
+        200:
+          description: OK
+      tags:
+      - Projects
+      - PROJECT
+      - ID
+      - Stories
+      - STORY
+      - ID
+      - Tasks
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

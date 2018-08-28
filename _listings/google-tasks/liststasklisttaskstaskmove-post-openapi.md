@@ -224,6 +224,100 @@ paths:
       - Tasks
       - Task
       - Move
+  /lists/{tasklist}/clear:
+    post:
+      summary: Add Lists Task List Clear
+      description: Clears all completed tasks from the specified task list. The affected
+        tasks will be marked as 'hidden' and no longer be returned by default when
+        retrieving all tasks for a task list.
+      operationId: tasks.tasks.clear
+      x-api-path-slug: liststasklistclear-post
+      parameters:
+      - in: path
+        name: tasklist
+        description: Task list identifier
+      responses:
+        200:
+          description: OK
+      tags:
+      - Lists
+      - Task
+      - List
+      - Clear
+  /users/@me/lists/{tasklist}:
+    delete:
+      summary: Delete Users Task List
+      description: Deletes the authenticated user's specified task list.
+      operationId: tasks.tasklists.delete
+      x-api-path-slug: usersmeliststasklist-delete
+      parameters:
+      - in: path
+        name: tasklist
+        description: Task list identifier
+      responses:
+        200:
+          description: OK
+      tags:
+      - Users
+      - Task
+      - List
+    get:
+      summary: Get Users Task List
+      description: Returns the authenticated user's specified task list.
+      operationId: tasks.tasklists.get
+      x-api-path-slug: usersmeliststasklist-get
+      parameters:
+      - in: path
+        name: tasklist
+        description: Task list identifier
+      responses:
+        200:
+          description: OK
+      tags:
+      - Users
+      - Task
+      - List
+    patch:
+      summary: Patch Users Task List
+      description: Updates the authenticated user's specified task list. This method
+        supports patch semantics.
+      operationId: tasks.tasklists.patch
+      x-api-path-slug: usersmeliststasklist-patch
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: tasklist
+        description: Task list identifier
+      responses:
+        200:
+          description: OK
+      tags:
+      - Users
+      - Task
+      - List
+    put:
+      summary: Put Users Task List
+      description: Updates the authenticated user's specified task list.
+      operationId: tasks.tasklists.update
+      x-api-path-slug: usersmeliststasklist-put
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: tasklist
+        description: Task list identifier
+      responses:
+        200:
+          description: OK
+      tags:
+      - Users
+      - Task
+      - List
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0
